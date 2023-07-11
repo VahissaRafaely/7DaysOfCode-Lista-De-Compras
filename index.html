@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <img class="img" src="img/05jun22_basket_icon_04-removebg-preview.png" alt="Imagem cesta de mercado">
+        <section class="container">
+            <h2 class="titulo">Lista de Compras</h2>
+            <!--Lista-->
+            <form id="listaComprasForm">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" required>
+                <option value="">Selecione uma categoria</option>
+                <option value="Padaria">Padaria</option>
+                <option value="Carnes">Carnes</option>
+                <option value="Mercearia">Mercearia</option>
+                <option value="Laticínios e Frios">Laticínios e Frios</option>
+                <option value="Bebidas">Bebidas</option>
+                <option value="Limpeza">Limpeza</option>
+                <option value="Hiegiene">Higiene</option>
+                <option value="Hortifruti">Hortifruti</option>
+            </select>
+                <br><br>
+                <label for="produto">Produto:</label>
+                <input type="text" id="produto" required>
+                <br><br>
+                <input class= "adicionar" type="submit" value="Adicionar à lista">
+            </form>
+
+            <h2>Itens da lista</h2>
+            <ul id="itensdalistaCompras"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
